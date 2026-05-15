@@ -1,0 +1,273 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+
+.custom-table .ant-table-thead > tr > th::before {
+  background-color: #212121 !important
+}
+.custom-table .ant-table-thead > tr > th {
+  background-color: #212121;
+  color: white;
+  font-weight: 600;
+  padding: 10px 15px;
+  
+}
+.custom-table  {
+  border-left: 1px solid #1f1f1f;
+  border-right: 1px solid #1f1f1f;
+  border-radius: 20px 20px 0 0;
+  
+}
+/* remove borders */
+.custom-table .ant-table {
+  background: #181818;
+  border-radius: 20px 20px 0 0;
+  
+}
+
+.custom-table .ant-table-thead > tr > th {
+  border: none !important;
+}
+
+.custom-table .ant-table-tbody > tr > td {
+  border-bottom: 1px solid #1f1f1f !important;
+  color: white;
+}
+
+
+
+
+/* row hover */
+.custom-table .ant-table-tbody > tr:hover > td {
+  background: #212121 !important;
+}
+
+
+
+
+.custom-input input::placeholder {
+  color: white !important;
+  opacity: 0.7;
+}
+
+/* Input Design */
+.custom-input {
+  height: 40px !important;
+  background-color: #181818 !important;
+  border-color: #FFFFFF14 !important;
+  color: white !important;
+}
+.custom-input .ant-picker-suffix {
+  color: white !important;
+}
+
+.custom-input .ant-picker-separator {
+  color: white !important;
+}
+/* Placeholder color */
+.custom-input::placeholder {
+  color: white !important;
+  opacity: 0.7;
+}
+
+
+
+
+
+.children-menu {
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+.no-scrollbar {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+
+
+
+
+
+
+select option {
+  background-color: #EDC4C5;
+
+}
+
+
+
+
+/* Pagination buttons style */
+.ant-pagination-item {
+  border-radius: 8px !important; /* Make buttons circular */
+}
+
+/* Active pagination button */
+.ant-pagination-item-active {
+  background-color: #C8A44D !important; /* Active background color */
+  border-color: #C8A44D !important;    /* Active border color */
+}
+
+/* Active pagination button text */
+.ant-pagination-item-active > a {
+  color: white !important; /* Ensure active text color is white */
+}
+
+/* Hover effect for buttons */
+
+
+
+/* In your CSS file or inside a styled-components if you're using them */
+.no-border-radius-modal .ant-modal {
+  border-radius: 0 !important;
+}
+
+
+:where(.css-dev-only-do-not-override-49qm).ant-modal .ant-modal-close {
+    position: absolute;
+    top: 12px;
+    inset-inline-end: 12px;
+    z-index: 1010;
+    padding: 0;
+    color: white;
+    font-weight: 600;
+    line-height: 1;
+    text-decoration: none;
+    background: transparent;
+    border-radius: 4px;
+    width: 32px;
+    height: 32px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: color 0.2s, background-color 0.2s;
+}
+
+
+/* Dropdown container */
+.custom-select-dropdown {
+  background-color: #181818 !important;
+  color: rgb(187, 187, 187) !important;
+  border-radius: 8px;
+  border: 1px solid #FFFFFF14;
+ 
+}
+
+/* Individual option */
+.custom-select-dropdown .ant-select-item-option {
+  background-color: #1b1b1b !important;
+  color: white !important;
+}
+
+/* Option hover */
+.custom-select-dropdown .ant-select-item-option-active {
+  background-color: #3b3b3b !important;
+  color: white !important;
+}
+
+/* Selected option */
+.custom-select-dropdown .ant-select-item-option-selected {
+  background-color: #161325 !important;
+  color: white !important;
+}
+
+.custom-select .ant-select-arrow {
+  color: white !important;
+  border: none !important;  
+  right: 8px;               
+}
+
+.custom-select .ant-select-selector:focus .ant-select-arrow {
+  color: white !important;
+  box-shadow: none !important;
+}
+
+/* Custom Select */
+.custom-select .ant-select-selector {
+  height: 40px !important;
+  background-color: #181818 !important;
+  border-color: #FFFFFF14 !important;
+  color: white !important;
+}
+
+.custom-select .ant-select-selection-placeholder {
+  color: white !important;
+  opacity: 0.7;
+}
+
+.custom-select .ant-select-arrow {
+  color: white !important;
+}
+
+.custom-select .ant-select-selector:hover,
+.custom-select .ant-select-selector:focus {
+  border-color: #822CE71A !important;
+  box-shadow: 0 0 0 2px rgba(144, 73, 226, 0.2);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* :where(.css-dev-only-do-not-override-49qm)[class^="ant-checkbox"] [class^="ant-checkbox"], :where(.css-dev-only-do-not-override-49qm)[class*=" ant-checkbox"] [class^="ant-checkbox"], :where(.css-dev-only-do-not-override-49qm)[class^="ant-checkbox"] [class*=" ant-checkbox"], :where(.css-dev-only-do-not-override-49qm)[class*=" ant-checkbox"] [class*=" ant-checkbox"] {
+    box-sizing: border-box;
+    background-color: #D9000A;
+} */
+
+:where(.css-dev-only-do-not-override-49qm).ant-checkbox-checked .ant-checkbox-inner {
+  background-color: #000000;
+  border-color: #000000;
+}
+
+
+
+:where(.css-dev-only-do-not-override-49qm).ant-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: #ff3916;
+  
+}
+
+
+
+
+.custom-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: red !important; /* Active ট্যাবের টেক্সট লাল হবে */
+}
+
+.custom-tabs .ant-tabs-ink-bar {
+  background-color: red !important; /* Active ট্যাবের নিচের বর্ডার লাল হবে */
+}
+
+
+.custom-tabs .ant-tabs-tab:hover {
+  color: inherit !important; 
+}
+
+.custom-tabs .ant-tabs-tab-btn:hover {
+  color: inherit !important; /* ট্যাবের বাটনের hover রঙ রিমুভ */
+}
+
+
+.custom-tabs .ant-tabs-tab {
+  border-bottom: none !important; /* প্রতিটি ট্যাবের নিচে থাকা বর্ডার রিমুভ */
+}
+
+.custom-tabs .ant-tabs-tab-active {
+  border-bottom: 2px solid red !important; /* শুধুমাত্র অ্যাক্টিভ ট্যাবের জন্য বর্ডার */
+}
+
+
+
