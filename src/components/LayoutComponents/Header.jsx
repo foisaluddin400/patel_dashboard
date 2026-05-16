@@ -145,7 +145,7 @@ const Header = () => {
         <div className="flex gap-8 p-1 px-6">
           <div className="relative">
             <Link to={"/dashboard/Settings/notification"}>
-              <div className="w-[45px] h-[45px] flex items-center justify-center text-xl rounded-full bg-gray-100 text-black ">
+              <div className="w-[45px] h-[45px] flex items-center justify-center text-xl rounded-full bg-[#FFFFFF0A] text-[#888888] border border-[#FFFFFF14]">
                 <span>
                   <LuBell />
                 </span>
@@ -268,7 +268,7 @@ const Header = () => {
           </div>
 
           <Link to={"/dashboard/Settings/profile"}>
-            <div className="flex gap-3">
+            <div className="flex gap-1 border border-[#FFFFFF14]  bg-[#FFFFFF0A] rounded-full p-1">
               <div>
                 <img
                   className="w-[45px] h-[45px]"
@@ -276,7 +276,7 @@ const Header = () => {
                   alt="profile"
                 />
               </div>
-              <div className="text-end">
+              <div className="text-end text-white">
                 <h3>Your Name</h3>
                 <h4 className="text-sm">Admin</h4>
               </div>

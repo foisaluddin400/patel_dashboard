@@ -26,7 +26,8 @@ const items = [
 
   { key: "platform-heading", type: "heading", label: "PLATFORM" },
   { key: "support-tickets", label: "Support Tickets", icon: <TbCategory2 />, link: "/dashboard/support-tickets" },
-  { key: "legal-pages", label: "Legal Pages", icon: <TbCategory2 />, link: "/dashboard/legal-pages" },
+  { key: "privecy-pages", label: "Privecy Policy", icon: <TbCategory2 />, link: "/dashboard/privecy-policy" },
+  { key: "terms-pages", label: "Terms & Condition", icon: <TbCategory2 />, link: "/dashboard/terms" },
 
   { key: "system-heading", type: "heading", label: "SYSTEM" },
   { key: "system-settings", label: "System Settings", icon: <IoSettingsOutline />, link: "/dashboard/system-settings" },

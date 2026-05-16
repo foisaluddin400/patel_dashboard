@@ -7,7 +7,7 @@ import CreatorManagement from "../page/CreatorManagement/CreatorManagement";
 import Subscription from "../page/Subscription/Subscription";
 
 import Profile from "../page/Settings/Profile";
-import TermsCondition from "../page/Settings/TermsCondition";
+
 import FAQ from "../page/Settings/FAQ";
 import PrivacyPolicy from "../page/Settings/PrivacyPolicy";
 import Categories from "../page/CategoriesManagement/Categories";
@@ -20,6 +20,14 @@ import Notification from "../page/Notification/Notification";
 import About from "../page/Settings/About";
 import Login from "../Auth/Login";
 import Plans from "../page/plans/Plans";
+import Regeneration from "../page/regeneration/Regeneration";
+import Payment from "../page/payment/Payment";
+import AiMonitoring from "../page/aiMonitoring/AiMonitoring";
+import SupportTicket from "../page/supportTicket/SupportTicket";
+import Privecy from "../page/privecy/Privecy";
+import TermsCondition from "../page/terms/TermsCondition";
+import ExerciseLibrary from "../page/exerciseLibrary/ExerciseLibrary";
+import ProfileSetting from "../page/profileSetting/ProfileSetting";
 
 
 export const router = createBrowserRouter([
@@ -56,8 +64,36 @@ export const router = createBrowserRouter([
         element: <Subcategory></Subcategory>,
       },
       {
+        path: "/dashboard/regeneration",
+        element: <Regeneration></Regeneration>,
+      },
+      {
         path: "/dashboard/Subscription",
         element: <Subscription></Subscription>,
+      },
+      {
+        path: "/dashboard/support-tickets",
+        element: <SupportTicket></SupportTicket>
+      },
+       {
+        path: "/dashboard/privecy-policy",
+        element: <Privecy></Privecy>
+      },
+      {
+        path: "/dashboard/terms",
+        element: <TermsCondition></TermsCondition>
+      },
+      {
+        path: "/dashboard/exercise-library",
+        element: <ExerciseLibrary></ExerciseLibrary>
+      },
+      {
+        path: "/dashboard/payments",
+        element: <Payment></Payment>,
+      },
+      {
+        path: "/dashboard/ai-monitoring",
+        element: <AiMonitoring></AiMonitoring>,
       },
       {
         path: "/dashboard/plans",
@@ -68,17 +104,14 @@ export const router = createBrowserRouter([
         element: <Profile></Profile>,
       },
       {
-        path: "/dashboard/Settings/profile",
-        element: <Profile></Profile>,
+        path: "/dashboard/system-settings",
+        element: <ProfileSetting></ProfileSetting>
       },
       {
         path: "/dashboard/Settings/notification",
         element: <Notification></Notification>,
       },
-      {
-        path: "/dashboard/Settings/Terms&Condition",
-        element: <TermsCondition></TermsCondition>,
-      },
+  
       {
         path: "/dashboard/Settings/FAQ",
         element: <FAQ></FAQ>,

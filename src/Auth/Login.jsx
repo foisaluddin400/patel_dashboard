@@ -1,19 +1,17 @@
-
 import React, { useState } from "react";
 import { Form, Input, Button, Checkbox } from "antd";
 import { FaEye, FaEyeSlash, FaGoogle, FaFacebookF } from "react-icons/fa";
 import { Link } from "react-router-dom";
-
+import logo from "../assets/header/logo.png";
 const Login = () => {
-
-    const [form] = Form.useForm();
+  const [form] = Form.useForm();
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
 
   const onFinish = (values) => {
     console.log("Form Values:", values);
   };
-  
+
   // const onFinish = async (values) => {
   //   setLoading(true);
   //   try {
@@ -37,13 +35,15 @@ const Login = () => {
   //   }
   // };
 
-  
   return (
- <div className="flex justify-center items-center min-h-screen px-4 lg:px-0">
-      <div className="w-full max-w-lg  lg:p-8 p-4 border">
+    <div className="flex justify-center bg-black items-center min-h-screen px-4 lg:px-0">
+      <div className="w-full max-w-lg  lg:p-8 p-4 bg-[#111111] border rounded-xl border-[#FFFFFF14]">
         {/* Title */}
-        <h2 className="text-2xl font-semibold text-gray-900 mb-2">Sign In</h2>
-        <p className="text-gray-600 mb-6 text-sm">
+        <div className="flex justify-center ">
+                <img src={logo} alt="Logo" className="w-[190px]" />
+              </div>
+        <h2 className="text-2xl font-semibold text-white mb-2">Sign In</h2>
+        <p className="text-[#666666] mb-6 text-sm">
           Enter your email address or choose a different way to sign in to
           Custom Ink.
         </p>
@@ -60,7 +60,13 @@ const Login = () => {
             ]}
           >
             <Input
-              style={{ height: "50px" }}
+              className="custom-input"
+              style={{
+                height: "45px",
+                background: "#1A1A1A",
+                border: "1px solid #2A2A2A",
+                color: "#fff",
+              }}
               placeholder="Enter Email Address"
             />
           </Form.Item>
@@ -71,7 +77,13 @@ const Login = () => {
             rules={[{ required: true, message: "Please input your password!" }]}
           >
             <Input.Password
-              style={{ height: "50px" }}
+              className="custom-input"
+              style={{
+                height: "45px",
+                background: "#1A1A1A",
+                border: "1px solid #2A2A2A",
+                color: "#fff",
+              }}
               className=""
               placeholder="••••••••"
             />
@@ -93,15 +105,12 @@ const Login = () => {
           <Form.Item>
             <button
               htmlType="submit"
-              className="w-full bg-red-500 py-3 text-white rounded-md hover:bg-primary-dark transition-colors"
+              className="w-full bg-[#7CFF3A] py-3 text-black rounded-md hover:bg-primary-dark transition-colors"
             >
               Continue
             </button>
           </Form.Item>
         </Form>
-
-
-       
       </div>
     </div>
   );

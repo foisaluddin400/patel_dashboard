@@ -271,3 +271,45 @@ select option {
 
 
 
+
+
+.jodit-container:not(.jodit_inline) .jodit-workplace {
+    background-color: #1b1b1b !important;
+    border: none !important;
+    max-height: 100%;
+    color: white !important;
+}
+
+.jodit-container:not(.jodit_inline) {
+    background-color: #313131 !important;
+    border: 2px solid #333335 !important;
+    
+}
+
+.jodit-toolbar__box:not(:empty):not(:empty) {
+   
+    background-color: #2f2f30 !important;
+    color:white !important;
+}
+
+
+.jodit-status-bar {
+    color: white !important;
+    /* -webkit-box-align: center; */
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #222124 !important;
+    border-radius: 0 0 3px 3px;
+    /* color: rgba(0, 0, 0, .75); */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 11px;
+    height: 20px;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    /* justify-content: flex-start; */
+    overflow: hidden;
+    padding: 0 calc(8px / 2);
+    text-transform: uppercase;
+}
