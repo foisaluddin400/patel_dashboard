@@ -214,28 +214,7 @@ const columns = [
           />
         </div>
       </div>
-      <div className="grid grid-cols-4 gap-4">
-        <div className="border border-[#FFFFFF14] bg-[#181818] p-6 w-full rounded-2xl">
-          
-          <span className="text-[#7CFF3A] text-4xl py-3 ">8</span>
-          <h1 className="text-[#555555] font-semibold">Total Collected</h1>
-        </div>
-        <div className="border border-[#FFFFFF14] bg-[#181818] p-6 w-full rounded-2xl">
-         
-          <span className="text-[#EF4444] text-4xl py-3 ">8</span>
-          <h1 className="text-[#555555] font-semibold">Failed Payment</h1>
-        </div>
-        <div className="border border-[#FFFFFF14] bg-[#181818] p-6 w-full rounded-2xl">
-          
-          <span className="text-white text-4xl py-3 ">8</span>
-          <h1 className="text-[#555555] font-semibold">Refunded</h1>
-        </div>
-        <div className="border border-[#FFFFFF14] bg-[#181818] p-6 w-full rounded-2xl">
-         
-          <span className="text-white text-4xl py-3 ">8</span>
-          <h1 className="text-[#555555] font-semibold">Total Transactions</h1>
-        </div>
-      </div>
+     
       {/* Table */}
     <div className="mt-4">
           <Table

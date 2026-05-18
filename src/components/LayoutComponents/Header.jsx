@@ -267,8 +267,8 @@ const Header = () => {
             </span>
           </div>
 
-          <Link to={"/dashboard/Settings/profile"}>
-            <div className="flex gap-1 border border-[#FFFFFF14]  bg-[#FFFFFF0A] rounded-full p-1">
+        
+            <div className="flex gap-1 ">
               <div>
                 <img
                   className="w-[45px] h-[45px]"
@@ -281,7 +281,7 @@ const Header = () => {
                 <h4 className="text-sm">Admin</h4>
               </div>
             </div>
-          </Link>
+        
         </div>
       </div>
     </div>

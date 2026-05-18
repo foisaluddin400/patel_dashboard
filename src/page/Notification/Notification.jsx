@@ -30,25 +30,25 @@ const Notification = () => {
   };
 
   return (
-    <div className="bg-white p-3 h-[87vh] overflow-auto">
+    <div className=" p-3 h-[87vh] overflow-auto">
       <Navigate title={"Notification"} />
 
       <div className="space-y-4">
         {notifications.map((note) => (
           <div
             key={note.id}
-            className="border border-gray-200 rounded-lg p-4 hover:shadow-md transition duration-200"
+            className="border border-[#dda6253b] bg-[#886d2d1f] rounded-lg p-4 hover:shadow-md transition duration-200"
           >
             <div className="flex items-start justify-between">
               <div className="flex-1">
                 <div className="flex items-center justify-between mb-1">
-                  <h3 className="text-lg font-semibold text-gray-800">{note.title}</h3>
+                  <h3 className="text-lg font-semibold text-white">{note.title}</h3>
                   <div className="flex items-center gap-1 text-sm text-gray-500">
                     <Clock className="w-4 h-4" />
                     {note.time}
                   </div>
                 </div>
-                <p className="text-gray-600">{note.message}</p>
+                <p className="text-gray-400">{note.message}</p>
               </div>
 
               <button

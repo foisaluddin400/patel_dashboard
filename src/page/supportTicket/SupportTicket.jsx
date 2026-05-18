@@ -181,20 +181,7 @@ const dummyUsers = Array.from({ length: 25 }, (_, index) => ({
           />
         </div>
       </div>
-<div className="grid grid-cols-3 gap-4">
-            <div className="border border-[#FFFFFF14] bg-[#181818] p-6 w-full rounded-2xl">
-              <span className="text-[#7CFF3A] text-4xl py-3 ">8</span>
-              <h1 className="text-[#555555] font-semibold">Pending</h1>
-            </div>
-            <div className="border border-[#FFFFFF14] bg-[#181818] p-6 w-full rounded-2xl">
-              <span className="text-[#EF4444] text-4xl py-3 ">8</span>
-              <h1 className="text-[#555555] font-semibold">In Progress</h1>
-            </div>
-            <div className="border border-[#FFFFFF14] bg-[#181818] p-6 w-full rounded-2xl">
-              <span className="text-white text-4xl py-3 ">8</span>
-              <h1 className="text-[#555555] font-semibold">Resolved</h1>
-            </div>
-          </div>
+
       {/* Table */}
     <div className="mt-4">
           <Table

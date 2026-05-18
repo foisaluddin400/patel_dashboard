@@ -8,6 +8,11 @@ import { LuEye } from "react-icons/lu";
 import { Navigate } from "../../Navigate";
 import { FaChevronDown } from "react-icons/fa";
 import AiMonitoringGraph from "../../components/Dashboard/AiMonitoringGraph";
+import AiMonitoringIco from "../../components/icon/AiMonitoringIco";
+import MarkIco from "../../components/icon/MarkIco";
+import CrosIco from "../../components/icon/CrosIco";
+import TimeIco from "../../components/icon/TimeIco";
+import DollarIco from "../../components/icon/DollarIco";
 
 const AiMonitoring = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -225,27 +230,27 @@ const columns = [
       </div>
       <div className="grid grid-cols-5 gap-4">
         <div className="border border-[#FFFFFF14] bg-[#181818] p-4 w-full rounded-2xl">
-          
-          <span className="text-[#7CFF3A] text-4xl py-3 ">8</span>
+          <div className="bg-[#7cff3a1f] w-[35px] h-[35px] flex justify-center items-center rounded border border-[#7cff3a46]"><AiMonitoringIco color={'#7CFF3A'}></AiMonitoringIco></div>
+          <span className="text-white text-4xl py-3 ">8</span>
           <h1 className="text-[#555555] font-semibold">Total AI Calls</h1>
         </div>
         <div className="border border-[#FFFFFF14] bg-[#181818] p-4 w-full rounded-2xl">
-         
-          <span className="text-[#EF4444] text-4xl py-3 ">8</span>
+         <div className="bg-[#22C55E15] border border-[#22C55E30] w-[35px] h-[35px] flex justify-center items-center rounded"><MarkIco></MarkIco></div>
+          <span className=" text-white text-4xl py-3 ">8</span>
           <h1 className="text-[#555555] font-semibold">Successful</h1>
         </div>
         <div className="border border-[#FFFFFF14] bg-[#181818] p-4 w-full rounded-2xl">
-          
+          <div className="bg-[#EF444415] border border-[#EF444430] w-[35px] h-[35px] flex justify-center items-center rounded"><CrosIco></CrosIco></div>
           <span className="text-white text-4xl py-3 ">8</span>
           <h1 className="text-[#555555] font-semibold">Field</h1>
         </div>
         <div className="border border-[#FFFFFF14] bg-[#181818] p-4 w-full rounded-2xl">
-         
+         <div className="bg-[#7B8FFF15] border border-[#7B8FFF30] w-[35px] h-[35px] flex justify-center items-center rounded"><TimeIco></TimeIco></div>
           <span className="text-white text-4xl py-3 ">8</span>
           <h1 className="text-[#555555] font-semibold">Avg Response Time</h1>
         </div>
         <div className="border border-[#FFFFFF14] bg-[#181818] p-4 w-full rounded-2xl">
-         
+         <div className="bg-[#f59f0b2d] w-[35px] h-[35px] flex justify-center items-center rounded"><DollarIco color={'#F59E0B'}></DollarIco></div>
           <span className="text-white text-4xl py-3 ">8</span>
           <h1 className="text-[#555555] font-semibold">Monthly AI Cost</h1>
         </div>

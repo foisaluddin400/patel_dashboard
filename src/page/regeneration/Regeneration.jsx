@@ -229,22 +229,7 @@ const columns = [
           />
         </div>
       </div>
-      <div className="grid grid-cols-2 gap-4">
-        <div className="border border-[#FFFFFF14] bg-[#181818] p-4 w-full rounded-2xl">
-          <div className="bg-[#C8A44D12] border border-[#C8A44D25]  rounded-2xl w-[45px] h-[45px] flex justify-center items-center text-2xl">
-           <ReloadIcon color={'#C8A44D'}></ReloadIcon>
-          </div>
-          <span className="text-white text-4xl py-3 ">8</span>
-          <h1 className="text-[#555555] font-semibold">Total Requests</h1>
-        </div>
-        <div className="border border-[#FFFFFF14] bg-[#181818] p-4 w-full rounded-2xl">
-           <div className="bg-[#7B8FFF12] border border-[#7B8FFF25]  rounded-2xl w-[45px] h-[45px] flex justify-center items-center text-2xl">
-           <CompletedIcon color={'#7B8FFF'}></CompletedIcon>
-          </div>
-          <span className="text-white text-4xl py-3 ">8</span>
-          <h1 className="text-[#555555] font-semibold">Total Requests</h1>
-        </div>
-      </div>
+      
       {/* Table */}
     <div className="mt-4">
           <Table
