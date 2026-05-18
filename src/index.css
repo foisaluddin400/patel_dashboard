@@ -244,11 +244,11 @@ select option {
 
 
 .custom-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
-  color: red !important; /* Active ট্যাবের টেক্সট লাল হবে */
+  color: red !important; 
 }
 
 .custom-tabs .ant-tabs-ink-bar {
-  background-color: red !important; /* Active ট্যাবের নিচের বর্ডার লাল হবে */
+  background-color: red !important; 
 }
 
 
@@ -257,19 +257,31 @@ select option {
 }
 
 .custom-tabs .ant-tabs-tab-btn:hover {
-  color: inherit !important; /* ট্যাবের বাটনের hover রঙ রিমুভ */
+  color: inherit !important; 
 }
 
 
 .custom-tabs .ant-tabs-tab {
-  border-bottom: none !important; /* প্রতিটি ট্যাবের নিচে থাকা বর্ডার রিমুভ */
+  border-bottom: none !important; 
 }
 
 .custom-tabs .ant-tabs-tab-active {
-  border-bottom: 2px solid red !important; /* শুধুমাত্র অ্যাক্টিভ ট্যাবের জন্য বর্ডার */
+  border-bottom: 2px solid red !important; 
 }
 
-
+.anticon {
+    display: inline-flex;
+    align-items: center;
+    color: white;
+    font-style: normal;
+    line-height: 0;
+    text-align: center;
+    text-transform: none;
+    vertical-align: -0.125em;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
 
 
 
@@ -313,3 +325,4 @@ select option {
     padding: 0 calc(8px / 2);
     text-transform: uppercase;
 }
+

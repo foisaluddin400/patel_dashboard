@@ -8,29 +8,110 @@ import { useDispatch } from "react-redux";
 import { FiUser } from "react-icons/fi";
 import { IoSettingsOutline } from "react-icons/io5";
 import { TbCategory2 } from "react-icons/tb";
+import DashboardIco from "../icon/DashboardIco";
+import Subscriber from "../icon/Subscriber";
+import UserIcon from "../icon/UserIcon";
+import PlansIco from "../icon/PlansIco";
+import ReloadIcon from "../icon/ReloadIcon";
+import ExerciseIco from "../icon/ExerciseIco";
+import AiMonitoringIco from "../icon/AiMonitoringIco";
+import DollarIco from "../icon/DollarIco";
+import SupportIco from "../icon/SupportIco";
+import SettingIco from "../icon/SettingIco";
+import LegalIco from "../icon/LegalIco";
 
 const items = [
-  { key: "overview-heading", type: "heading", label: "OVERVIEW" },
-  { key: "dashboard", label: "Dashboard", icon: <FaHome />, link: "/" },
+  {
+    key: "overview-heading",
+    type: "heading",
+    label: "OVERVIEW",
+  },
+  {
+    key: "dashboard",
+    label: "Dashboard",
+    icon: (active) => <DashboardIco color={active ? "#FFFFFF" : "#888888"} />,
+    link: "/",
+  },
 
   { key: "management-heading", type: "heading", label: "MANAGEMENT" },
-  { key: "users", label: "Users", icon: <FiUser />, link: "/dashboard/UserManagement" },
-  { key: "subscriptions", label: "Subscriptions", icon: <TbCategory2 />, link: "/dashboard/Subscription" },
-  { key: "plans", label: "Plans", icon: <TbCategory2 />, link: "/dashboard/plans" },
-  { key: "regeneration", label: "Regeneration", icon: <TbCategory2 />, link: "/dashboard/regeneration" },
-  { key: "exercise-library", label: "Exercise Library", icon: <TbCategory2 />, link: "/dashboard/exercise-library" },
+
+  {
+    key: "users",
+    label: "Users",
+    icon: (active) => <UserIcon color={active ? "#FFFFFF" : "#888888"} />,
+    link: "/dashboard/UserManagement",
+  },
+  {
+    key: "subscriptions",
+    label: "Subscriptions",
+    icon: (active) => <Subscriber color={active ? "#FFFFFF" : "#888888"} />,
+    link: "/dashboard/Subscription",
+  },
+  {
+    key: "plans",
+    label: "Plans",
+    icon: (active) => <PlansIco color={active ? "#FFFFFF" : "#888888"} />,
+    link: "/dashboard/plans",
+  },
+  {
+    key: "regeneration",
+    label: "Regeneration",
+    icon: (active) => <ReloadIcon color={active ? "#FFFFFF" : "#888888"} />,
+    link: "/dashboard/regeneration",
+  },
+  {
+    key: "exercise-library",
+    label: "Exercise Library",
+    icon: (active) => <ExerciseIco color={active ? "#FFFFFF" : "#888888"} />,
+    link: "/dashboard/exercise-library",
+  },
 
   { key: "intelligence-heading", type: "heading", label: "INTELLIGENCE" },
-  { key: "ai-monitoring", label: "AI Monitoring", icon: <TbCategory2 />, link: "/dashboard/ai-monitoring" },
-  { key: "payments", label: "Payments", icon: <TbCategory2 />, link: "/dashboard/payments" },
+
+  {
+    key: "ai-monitoring",
+    label: "AI Monitoring",
+    icon: (active) => (
+      <AiMonitoringIco color={active ? "#FFFFFF" : "#888888"} />
+    ),
+    link: "/dashboard/ai-monitoring",
+  },
+  {
+    key: "payments",
+    label: "Payments",
+    icon: (active) => <DollarIco color={active ? "#FFFFFF" : "#888888"} />,
+    link: "/dashboard/payments",
+  },
 
   { key: "platform-heading", type: "heading", label: "PLATFORM" },
-  { key: "support-tickets", label: "Support Tickets", icon: <TbCategory2 />, link: "/dashboard/support-tickets" },
-  { key: "privecy-pages", label: "Privecy Policy", icon: <TbCategory2 />, link: "/dashboard/privecy-policy" },
-  { key: "terms-pages", label: "Terms & Condition", icon: <TbCategory2 />, link: "/dashboard/terms" },
+
+  {
+    key: "support-tickets",
+    label: "Support Tickets",
+    icon: (active) => <SupportIco color={active ? "#FFFFFF" : "#888888"} />,
+    link: "/dashboard/support-tickets",
+  },
+  {
+    key: "privecy-pages",
+    label: "Privecy Policy",
+    icon: (active) => <LegalIco color={active ? "#FFFFFF" : "#888888"} />,
+    link: "/dashboard/privecy-policy",
+  },
+  {
+    key: "terms-pages",
+    label: "Terms & Condition",
+    icon: (active) => <LegalIco color={active ? "#FFFFFF" : "#888888"} />,
+    link: "/dashboard/terms",
+  },
 
   { key: "system-heading", type: "heading", label: "SYSTEM" },
-  { key: "system-settings", label: "System Settings", icon: <IoSettingsOutline />, link: "/dashboard/system-settings" },
+
+  {
+    key: "system-settings",
+    label: "System Settings",
+    icon: (active) => <SettingIco color={active ? "#FFFFFF" : "#888888"} />,
+    link: "/dashboard/system-settings",
+  },
 ];
 
 const SidBar = () => {
@@ -95,9 +176,9 @@ const SidBar = () => {
             >
               {/* Left */}
               <div className="flex items-center gap-3">
-                <span className={isActive ? "text-white" : "text-[#888888]"}>
-                  {item.icon}
-                </span>
+                <span>
+  {item.icon(isActive)}
+</span>
 
                 <span className="text-sm font-medium">
                   {item.label}
